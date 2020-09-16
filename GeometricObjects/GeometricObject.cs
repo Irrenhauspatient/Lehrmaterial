@@ -12,7 +12,7 @@ namespace GeometricObjects
         public virtual double XCoordinate { get; set; }
         public virtual double YCoordinate { get; set; }
        
-        #region Methoden
+   
         public abstract double GetArea();       
         public abstract double GetPerimeter();
         public virtual double Bigger(GeometricObject obj)
@@ -28,12 +28,12 @@ namespace GeometricObjects
             YCoordinate += dy;
         }
    
-        public static double CountGeometricObjects { get; protected set; }
+          public static double CountGeometricObjects { get; protected set; }
    
-        public GeometricObject()
-        {
+          public GeometricObject()
+          {
             CountGeometricObjects++;
-        }
+          }
     
      
         public static int Bigger(GeometricObject obj1, GeometricObject obj2)

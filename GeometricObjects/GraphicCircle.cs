@@ -15,7 +15,7 @@ namespace GeometricObjects
             Radius = radius;
             XCoordinate = x;
             YCoordinate = y;
-            Circle.CountGeometricObjects++;
+            GraphicCircle.CountGeometricObjects++;
         }
 
         public void Draw()

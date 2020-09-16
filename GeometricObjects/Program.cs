@@ -11,8 +11,10 @@ namespace GeometricObjects
     {
         static void Main(string[] args)
         {
-
+      
             Rectangle viereck = new Rectangle();
+            Rectangle viereck1 = new Rectangle();
+            Rectangle viereck2 = new Rectangle();
             
             GraphicCircle gCircle = new GraphicCircle();
             Console.WriteLine($"Anzahl der Objekte ist: {GeometricObject.CountGeometricObjects}");
@@ -41,17 +43,17 @@ namespace GeometricObjects
 
             Console.WriteLine($"Die Fläche beträgt {kreis.GetArea()}" );
             Console.WriteLine($"Der Umfang beträgt {kreis.GetPerimeter()}");
-
+   
             Console.ReadLine();
-
+   
             Console.WriteLine($"Geben sie die Länge des Vierecks an");
             viereck.Length = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine($"Geben sie die Breite des Vierecks an");
             viereck.With = Convert.ToDouble(Console.ReadLine());
-
+   
             Console.WriteLine($"Der Umfang beträgt: {viereck.GetPerimeter()}");
             Console.WriteLine($"Die Fläche beträgt: {viereck.GetArea()}");
-
+   
             Console.ReadLine();
 
             if (kreis != null)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GeometricObjects
 {
-    public class GraphicRectangle : Rectangle
+    class GraphicRectangle : Rectangle
     {
         public GraphicRectangle() : base(0, 0, 0, 0) { }
         public GraphicRectangle(double length, double with) : base(length, with, 0, 0) { }

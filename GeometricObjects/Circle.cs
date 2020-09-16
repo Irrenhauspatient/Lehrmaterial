@@ -16,7 +16,7 @@ namespace GeometricObjects
             Radius = radius;
             XCoordinate = x;
             YCoordinate = y;
-            Circle.CountGeometricObjects++;
+            GeometricObject.CountGeometricObjects++;
         }
 
         #endregion
