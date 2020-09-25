@@ -15,6 +15,7 @@ namespace GeometricObjects
             Rectangle viereck = new Rectangle();
             Rectangle viereck1 = new Rectangle();
             Rectangle viereck2 = new Rectangle(21,11);
+            Rectangle viereck3 = new Rectangle();
             
             
             Console.WriteLine($"Anzahl der Objekte ist: {GeometricObject.CountGeometricObjects}");
