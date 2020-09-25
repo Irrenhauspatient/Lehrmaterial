@@ -16,7 +16,7 @@ namespace GeometricObjects
             With = with;
             XCoordinate = x;
             YCoordinate = y;
-            GraphicRectangle.CountGeometricObjects++;
+            GeometricObjectadd();
         }
 
 

@@ -28,11 +28,12 @@ namespace GeometricObjects
             YCoordinate += dy;
         }
    
-          public static double CountGeometricObjects { get; protected set; }
+          public static int CountGeometricObjects { get; protected set; }
    
-          public GeometricObject()
+          public void GeometricObjectadd()
           {
-            CountGeometricObjects++;
+            CountGeometricObjects++;           
+            
           }
     
      

@@ -18,7 +18,7 @@ namespace GeometricObjects
             With = with;
             XCoordinate = x;
             YCoordinate = y;
-            Rectangle.CountGeometricObjects++;
+            GeometricObjectadd();
         }
 
         #endregion
