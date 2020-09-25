@@ -61,5 +61,10 @@ namespace GeometricObjects
         {
             return 2 * Radius * Math.PI;
         }
+
+        public override string ToString()
+        {
+            return "Circle, R=" + Radius + ",Fläche=" + GetArea()
+        }
     }
 }
