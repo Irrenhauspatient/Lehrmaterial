@@ -11,7 +11,15 @@ namespace GeometricObjects
     {
         static void Main(string[] args)
         {
-      
+            Document doc = new Document();
+            doc.Copy();
+            ICopy copy = doc;
+            copy.Copy();
+            IAdress adress = doc;
+            adress.Copy();
+            
+            
+
             Rectangle viereck = new Rectangle();
             Rectangle viereck1 = new Rectangle();
             Rectangle viereck2 = new Rectangle(21,11);

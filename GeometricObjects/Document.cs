@@ -6,12 +6,29 @@ using System.Threading.Tasks;
 
 namespace GeometricObjects
 {
-    class Document : ICopy
+ 
+    class Document : ICopy, IAdress
     {
+
+        void ICopy.Copy()
+        {
+            Console.WriteLine("Copy Methode in ICopy");
+        }
+
+        void IAdress.Copy()
+        {
+            Console.WriteLine("Copy Methode in IAdress");
+        }
         public void Copy()
         {
-            Console.WriteLine($"Das Dokument wird kopiert";
+            Console.WriteLine("Das Dokument wird kopiert");
         }
+
+        public int Compare(object obj)
+        {
+            throw new NotImplementedException();
+        }
+
         private string _Caption;
 
         public string Caption
@@ -20,5 +37,12 @@ namespace GeometricObjects
             set { _Caption = value; }
         }
 
+
+       
+
+        
+        
     }
+
+
 }
