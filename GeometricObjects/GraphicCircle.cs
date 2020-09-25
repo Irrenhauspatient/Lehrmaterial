@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace GeometricObjects
 {
@@ -11,8 +12,8 @@ namespace GeometricObjects
     class GraphicCircle : Circle, IDraw
     {
         public GraphicCircle() : base(0, 0, 0) { }
-        public GraphicCircle(double radius) : base(radius, 0, 0) { }
-        public GraphicCircle(double radius, double x, double y) :base (radius,x,y)
+        public GraphicCircle(int radius) : base(radius, 0, 0) { }
+        public GraphicCircle(int radius, int x, int y) :base (radius,x,y)
         {
             Radius = radius;
             XCoordinate = x;

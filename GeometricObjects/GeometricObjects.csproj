@@ -45,8 +45,10 @@
   <ItemGroup>
     <Compile Include="Auto.cs" />
     <Compile Include="Circle.cs" />
+    <Compile Include="ComparerClass.cs" />
     <Compile Include="Document.cs" />
     <Compile Include="GeometricObject.cs" />
+    <Compile Include="GeometricObjectComparer.cs" />
     <Compile Include="Interfaces.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="GraphicRectangle.cs" />

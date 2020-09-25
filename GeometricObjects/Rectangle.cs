@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace GeometricObjects
 {
@@ -11,8 +12,8 @@ namespace GeometricObjects
         
         #region Konstruktoren
         public Rectangle() : this(0, 0, 0, 0) { }
-        public Rectangle(double length, double with) : this(length,with, 0, 0) { }
-        public Rectangle(double length,double with, double x, double y)
+        public Rectangle(int length, int with) : this(length,with, 0, 0) { }
+        public Rectangle(int length,int with, int x, int y)
         {
             Length = length;
             With = with;
@@ -23,15 +24,15 @@ namespace GeometricObjects
 
         #endregion
 
-        public override double XCoordinate { get; set; }
-        public override double YCoordinate { get; set; }
+        public override int XCoordinate { get; set; }
+        public override int YCoordinate { get; set; }
 
         #region Eigenschaften
 
 
-        private double _Length;
+        private int _Length;
 
-        public double Length
+        public int Length
         {
             get { return _Length; }
             set
@@ -52,9 +53,9 @@ namespace GeometricObjects
             }
         }
 
-        private double _With;
+        private int _With;
 
-        public double With
+        public int With
         {
             get { return _With; }
             set

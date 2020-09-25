@@ -25,5 +25,9 @@ namespace GeometricObjects
     {
         void Copy();
     }
-
+    
+    public interface IComparer
+    {
+        int Compare (Object x, Object y);
+    }
 }

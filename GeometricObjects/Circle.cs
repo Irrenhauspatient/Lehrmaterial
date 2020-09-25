@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace GeometricObjects
 {
@@ -10,8 +11,8 @@ namespace GeometricObjects
     {
         #region Konstruktoren
         public Circle() : this(0, 0, 0) { }
-        public Circle(double radius) : this(radius, 0, 0) { }
-        public Circle(double radius, double x, double y)
+        public Circle(int radius) : this(radius, 0, 0) { }
+        public Circle(int radius, int x, int y)
         {
             Radius = radius;
             XCoordinate = x;
@@ -21,15 +22,15 @@ namespace GeometricObjects
 
         #endregion
 
-        public override double XCoordinate { get; set; }
-        public override double YCoordinate { get; set; }
+        public override int XCoordinate { get; set; }
+        public override int YCoordinate { get; set; }
 
         #region Eigenschaften
 
 
-        private double _Radius;
+        private int _Radius;
 
-        public double Radius
+        public int Radius
         {
             get { return _Radius; }
             set
